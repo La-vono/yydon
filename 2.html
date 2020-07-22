@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/2.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+	   <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="warp2">
+			<div class="dn1">
+				<img class="img1" src="images/菜单.png">
+				<ul class="u0" >
+				  <li class="l2">我的消息</li>
+				  <li class="l2">我的好友</li>
+				  <li class="l2">听歌识曲</li>
+				  <li class="l2">个性装扮</li>
+				  <li class="l2">附近的人</li>
+				</ul>
+				<ul class="u1"><a  href="2.html"><span>我的</span></a></ul>
+				<ul class="u1"><a href="yinyue.html"><span>发现</span></a></ul>
+				<ul class="u1"><a href="3.html"><span>乐村</span></a></ul>
+				<ul class="u1"><a href="4.html"><span>视频</span></a></ul>
+				<ul><a href="7.html"><img class="img2" src="images/搜索.png"></a></ul>
+			</div>
+			<div class="wode">
+				<ul class="tupian1">
+					<li><img src="images/音乐.png"></li>
+					<li><img src="images/播放.png"> </li>
+					<li><img src="images/下载.png"></li>
+					<li><img src="images/音乐%20(1).png"></li>
+					<li><img src="images/收藏.png"></li>
+				</ul>
+				<ul class="tuzi">
+					<li>本地音乐</li>
+					<li>最近播放</li>
+					<li>下载管理</li>
+					<li>我的电台</li>
+					<li>我的收藏</li>
+				</ul>
+			</div>
+			<div class="shui"></div>
+			<div class="wode1">
+				<div class="chuan">
+					<img class="cimg1" src="images/展开.png" />
+					<b>创建的歌单</b>
+					<img class="cimg2" src="images/加.png">
+					<img class="cimg3" src="images/更多.png" />
+				</div>
+				<div class="cgedan">
+					<ul class="cge1">
+						<li><img class="cimg4" src="images/sah5.jpeg">
+						<span class="span1">我喜欢的音乐</span>
+						<span class="span2">400首</span>
+						<img class="cimg5" src="images/更多.png" />
+						</li>
+						<li><img class="cimg4" src="images/sha1.jpeg">
+						<span  class="span1">好听的自愈歌</span>
+						 <span class="span2">29首</span>
+						 <img class="cimg5" src="images/更多.png" />
+						 </li>
+						<li><img class="cimg4" src="images/sha2.jpeg">
+						<span class="span1">my beautiful</span>
+						<span class="span2">34首</span>
+						<img class="cimg5" src="images/更多.png" />
+						</li>
+						<li><img class="cimg4" src="images/sha4.jpeg">
+						<span class="span1">孤独</span>
+						<span class="span2">40首</span>
+						<img class="cimg5" src="images/更多.png" />
+						</li>
+						<li><img class="cimg4" src="images/sha6.jpeg">
+						<span class="span1">民谣</span>
+						<span class="span2">20首</span>
+						<img class="cimg5" src="images/更多.png" />
+						</li>
+					</ul>
+				</div>
+				<div class="tanchu">
+					<ul class="chu1">
+						<li>创建新歌单</li>
+						<li>歌单管理</li>
+						<li>截图导入歌单</li>
+						<li>恢复歌单</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var tan=$('.tanchu').hide();
+			$('.cimg3').click(function(){
+				$('.tanchu').fadeIn(1000);
+			});
+			$('.cgedan').click(function(){
+				$('.tanchu').fadeOut(1000);
+			});
+			
+		</script>
+	</body>
+</html>

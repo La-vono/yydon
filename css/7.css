@@ -1,0 +1,15 @@
+*{padding: 0;margin: 0;font-size: 1rem;}
+.warp4{width: 100%;}
+.box1{position: absolute;width: 100%;top: 0.625rem;height: 2.5rem;}
+.box1 .fanhui{width: 5%;position: relative;left: 1.25rem;}
+.gg1{position: relative;top: 1.125rem;width: 70%;height: 2.5rem;border-radius: 0.625rem;left: 3.515625rem;;}
+.in1{display: inline-block;position: relative;left: 3rem;border-bottom: #000000 1px solid;width: 50%;}
+.box2{position: absolute;top: 6.5rem;}
+.box2 img{width: 10%;position: relative;left: 14.25rem;}
+.box2 span{position: relative;left: 0.625rem;}
+.box2 ul li{list-style: none;float: left;border: 1px solid whitesmoke;margin: 0.625rem;padding: 0.325rem;border-radius: 10px;background-color: #C0C0C0;position: relative;left: 1.25rem;}
+.box3 {position: absolute;top: 13rem;}
+.box3 p{position: relative;left: 0.625rem;}
+.box3 li{position: relative;left: 1.95rem;height: 3.525rem;}
+.box3 i{color: #FF0000;}
+.box3 li small{font-size: 8px;position: relative;float: right;top: 1.625rem;right: 3.125rem;color: #C0C0C0;}

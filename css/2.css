@@ -1,0 +1,42 @@
+*{padding: 0;margin: 0;}
+.dn1{background:#DBDBDB ;width: 100%;height: 3.125rem;}
+.dn1 img,.dn1 ul{float: left;}
+.dn1 .img1{position: relative;left: 2%;width: 10%;top: 0.425rem;}
+.dn1 .img2{position: absolute;right: 2%;width: 10%;top: 0.425rem;}
+.dn1 span{margin: 0.8375rem;width: 70%;font-size: 1.1rem;position: relative;top: 0.625rem;}
+a{text-decoration: none;color: #FCFCFC;}	
+ 
+.dn1 span:hover{font-size: 25px;color: black;}
+.u0{position: absolute;width: 100%;}
+.u0 li{width: 30%;  height: 40px;border: 1px solid silver;background-color:darkgray;z-index: 2000;border-radius: 5px;
+       position: relative;top: 50px;list-style: none;text-align: center;line-height: 40px;display: none;}
+
+/*wode */
+
+
+
+
+ul,li{padding: 0;margin: 0;list-style: none;}
+.warp2{width: 100%;height: auto;font-size: 1rem;position: absolute;}
+.tuzi,.tupian1{float: left;}
+.tuzi{width: 100%;position: absolute;}
+.tupian1 img{width: 50%;position: relative;left: 1.25rem;top: 0.650rem;margin-top: 0.625rem;}
+.tuzi li{position: relative;left: 3.5rem;margin-top: 0.9rem;border-bottom: 1px solid silver;width: 80%;display: block;padding-bottom:0.1875rem ;}
+.shui{width: 100%;height: 0.625rem;border: 1px solid silver;position: relative;top: 14rem;background-color: #C0C0C0;}
+
+
+
+/*chuan*/
+.wode1{position: absolute;width: 100%;}
+.chuan{position: relative;top: 15.625rem;}
+.chuan img{width: 5%;}
+.chuan b{position: relative;left: 0.625rem;}
+.cimg2,.cimg3{position: relative;left: 11.25rem;margin-left: 0.625rem;top: 0.3125rem;}
+.cimg1{position: relative;top: 0.3125rem;left: 0.625rem;}
+.cgedan{position: relative;width: 100%;top:16.5rem;z-index: 1;}
+.cge1 .cimg4{position: relative;width: 15%;border-radius: 0.3125rem;left: 0.9375rem;margin-bottom: 0.625rem;}
+.cge1 .span1{position: relative;top: -2.25rem;left: 1.35rem;}
+.span2{color: #A9A9A9;font-size: 0.625rem;position: relative;left: -0.825rem;top: -0.825rem;}
+.cimg5{position: relative;width: 5%;top: -1.25rem;left: 9.25rem;}
+.chu1{width: 100%;border: 1px solid white;border-radius:0.625rem 0.625rem 0 0 ;background-color: #DBDBDB;height: 10.125rem;position: fixed;top: 32.25rem;z-index: 100;}
+.chu1 li{font-size: 1.2rem;margin: 0.525rem;border-bottom: 1px solid silver;text-align: center;}

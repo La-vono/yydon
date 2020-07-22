@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/3.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+	    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="dn1">
+			<img class="img1" src="images/菜单.png">
+			<ul class="u0" >
+			  <li class="l2">我的消息</li>
+			  <li class="l2">我的好友</li>
+			  <li class="l2">听歌识曲</li>
+			  <li class="l2">个性装扮</li>
+			  <li class="l2">附近的人</li>
+			</ul>
+			<ul class="u1"><a  href="2.html"><span>我的</span></a></ul>
+			<ul class="u1"><a href="yinyue.html"><span>发现</span></a></ul>
+			<ul class="u1"><a href="3.html"><span>乐村</span></a></ul>
+			<ul class="u1"><a href="4.html"><span>视频</span></a></ul>
+			<ul><a href="7.html"><img class="img2" src="images/搜索.png"></a></ul>
+		</div>
+	<div class="warp3">
+		<h3>广场</h3>
+		<div class="gc">
+			
+			<div class="pl">
+				<span class="sp1">乐村热评墙  &gt;</span>
+				<div class="hq"></div>
+				<span class="sp2">看看哪些评论上了热评墙</span>
+			</div>
+			<div class="pl1">
+				<div class="tp1">
+					<a href="3.html"><h2>&lt;</h2></a>
+					<img class="dan1" src="images/单车.jpeg" />
+					<div class="dc">
+						<span class="zi1">danche|单车——陈奕迅</span>
+						</div>
+				</div>
+				<div class="tp2">
+					<img class="xiang1" src="images/向日葵.jpeg" />
+					<div class="dc1">
+						<span class="zi2">danche|向日葵——植物</span>
+						</div>
+				</div>
+				<div class="tp3">
+					<img class="tan1" src="images/唐人街.jpeg" />
+					<div class="dc2">
+						<span class="zi3">tanrenjie|唐人街——风景</span>
+						</div>
+				</div>
+				<div class="tp4">
+					<img class="ri1" src="images/日落.jpeg" />
+					<div class="dc3">
+						<span class="zi4">rilou|日落——风景</span>
+						</div>
+				</div>
+			</div>
+		</div>
+	     <div class=""></div>
+	</div>
+	<script type="text/javascript">
+		$('.dan1').click(function(){
+			var xiang=$('.xiang1').fadeOut(1000,function(){
+				$('.dc1').fadeOut(1000);
+			});
+			var tan=$('.tan1').fadeOut(1000,function(){
+				$('.dc2').fadeOut(1000);
+			});
+			var ri=$('.ri1').fadeOut(1000,function(){
+				$('.dc3').fadeOut(1000);
+			});
+			$(this).animate({
+				width:'+=40%',
+				left:'+=1rem'
+				
+			},1000,function(){
+				$('.dc').fadeOut(1000);
+			});
+		});
+		$('.xiang1').click(function(){
+			var xiang=$('.dan1').fadeOut(1000,function(){
+				$('.dc').fadeOut(1000);
+			});
+			var tan=$('.tan1').fadeOut(1000,function(){
+				$('.dc2').fadeOut(1000);
+			});
+			var ri=$('.ri1').fadeOut(1000,function(){
+				$('.dc3').fadeOut(1000);
+			});
+			$(this).animate({
+				width:'+=40%',
+				left:'-=10rem'
+				
+			},1000,function(){
+				$('.dc1').fadeOut(1000);
+			});
+		});
+		$('.tan1').click(function(){
+			var xiang=$('.xiang1').fadeOut(1000,function(){
+				$('.dc1').fadeOut(1000);
+			});
+			var tan=$('.dan1').fadeOut(1000,function(){
+				$('.dc').fadeOut(1000);
+			});
+			var ri=$('.ri1').fadeOut(1000,function(){
+				$('.dc3').fadeOut(1000);
+			});
+			$(this).animate({
+				width:'+=40%',
+				left:'+=1.1rem',
+				top:'-=15rem'
+				
+			},1000,function(){
+				$('.dc2').fadeOut(1000);
+			});
+		});
+		$('.ri1').click(function(){
+			var xiang=$('.xiang1').fadeOut(1000,function(){
+				$('.dc1').fadeOut(1000);
+			});
+			var tan=$('.tan1').fadeOut(1000,function(){
+				$('.dc2').fadeOut(1000);
+			});
+			var ri=$('.dan1').fadeOut(1000,function(){
+				$('.dc').fadeOut(1000);
+			});
+			$(this).animate({
+				width:'+=40%',
+				left:'-=10rem',
+				top:'-=15rem'
+			},1000,function(){
+				$('.dc3').fadeOut(1000);
+			});
+		});
+	</script>
+	</body>
+</html>

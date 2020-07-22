@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/yinyue.css">
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+	</head>
+	<body>
+		<div class="dv1">
+			<div class="dn1">
+				<img class="img1" src="images/菜单.png">
+				<ul class="u0" >
+				  <li class="l2">我的消息</li>
+				  <li class="l2">我的好友</li>
+				  <li class="l2">听歌识曲</li>
+				  <li class="l2">个性装扮</li>
+				  <li class="l2">附近的人</li>
+				</ul>
+				<ul class="u1"><a  href="2.html"><span>我的</span></a></ul>
+				<ul class="u1"><a href="yinyue.html"><span>发现</span></a></ul>
+				<ul class="u1"><a href="3.html"><span>乐村</span></a></ul>
+				<ul class="u1"><a href="4.html"><span>视频</span></a></ul>
+				<ul><a href="7.html"><img class="img2" src="images/搜索.png"></a></ul>
+			</div>
+		<div class="dn2">
+			<div class="dn3">
+				<ul>
+			<img class="m1" src="images/1.jpeg"  style="z-index: 7;"/>
+			<img  src="images/2.jpeg" style="z-index: 6;" >
+			<img  src="images/3.jpeg" style="z-index: 5;">
+			<img  src="images/4.jpeg" style="z-index: 4;"/>
+			<img  src="images/5.jpeg" style="z-index: 3;"/>
+			<img  src="images/6.jpeg" style="z-index: 2;">
+			<img  src="images/7.jpeg" style="z-index: 1;">
+			</ul>
+			</div>
+			<li class="l1"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<a class="a1" href="#id"><</a>
+			<a class="a2" href="#id">></a>
+		</div>
+		<div class="dn4">
+			<div class="dn5">
+			<img class="img0" src="images/日历.png" /><span>每日推荐</span>
+			<img src="images/歌单.png"><span>歌单</span>
+			<img src="images/排行榜.png"><span>排行榜</span>
+			<img src="images/直播.png"><span>直播</span>
+			</div>
+		</div>
+		<div class="dn6">
+			<div class="d1">
+				<span class="span1">推荐歌单</span>
+				<a href="8.html" class="a3">歌单广场</a>
+			</div>
+			<div class="d2">
+				<img class="i1" src="images/周星驰1.jpg">
+				<img class="i2" src="images/张国荣1.jpeg">
+				<img class="i3" src="images/微博1.jpg">
+				<img class="i4" src="images/微博2.jpg">
+				<img class="i5" src="images/微博3.jpg" />
+				<img class="i6" src="images/微博4.jpg">
+			</div>
+			<div class="d3">
+				<span class="xin1">新碟</span>
+				<span class="xin2">新歌</span>
+				<span class="xin3">|</span>
+				<span class="xin4">更多新碟</span>
+				<div class="d4">
+				<img class="x1" src="images/sah5.jpeg" />
+				<img class="x1" src="images/sha1.jpeg" />
+				<img class="x1" src="images/sha2.jpeg">
+				<img class="x2" src="images/sha4.jpeg">
+				<img class="x2" src="images/sha6.jpeg" />
+				<img class="x2" src="images/shadiao.jpeg" />
+				</div>
+			</div>
+		</div>
+		
+		</div>
+		
+		<script type="text/javascript">
+			
+			 
+			 /*z转播图*/
+			 
+			var index=0;
+			function zb(){
+				index++;
+				index=index==7?0:index;
+				$('.dn3 img').eq(index).fadeIn(300).siblings('img').fadeOut(300);
+				$('.dn2 li').eq(index).css('background','#f40').siblings('li').css('background','#fff');
+			}
+			function yd(){
+				index--;
+				index=index==-1?6:index;
+				$('.dn3 img').eq(index).fadeIn(3000).siblings('img').fadeOut(3000);
+				$('.dn2 li').eq(index).css('background','#f40').siblings('li').css('background','#fff');
+		
+			}
+			var time=setInterval(zb,3000);
+			$('.dn2').hover(function(){
+				clearInterval(time);
+			},function(){
+				time=setInterval(zb,3000);
+			});
+			$('.dn2 li').mouseenter(function(){
+				index=$(this).index();
+				index=index==7?0:index;
+				$('.dn3 img').eq(index).fadeIn(3000).siblings('img').fadeOut(3000);
+				$('.dn2 li').eq(index).css('background','#f40').siblings('li').css('background','#fff');
+			});
+			$('.a1').click(function(){
+				yd();
+			});
+			$('.a2').click(function(){
+				zb();
+			});
+			
+			
+			$('.xin1').hover(function(){
+				$('.x1').show();
+		         $('.x2').hide();
+			});
+			$('.xin2').hover(function(){
+				$('.x2').show();
+			     $('.x1').hide();
+			})
+			
+		</script>
+	</body>
+</html>
